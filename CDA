@@ -1,5 +1,5 @@
-library(tidyverse)
 library(rio)
+library(tidyverse)
 
 #Proportion of cancer patients waiting more than one month between diagnosis and treatment
 
