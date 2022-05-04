@@ -1,7 +1,15 @@
+## Check required packages are installed
+
+if (!("rio" %in% packages$Package)) {
+  install.packages("rio")
+
+if (!("tidyverse" %in% packages$Package)) {
+  install.packages("tidyverse")
+  
 library(rio)
 library(tidyverse)
 
-#Proportion of cancer patients waiting more than one month between diagnosis and treatment
+## Proportion of cancer patients waiting more than one month between diagnosis and treatment
 
 url <- 'https://files.digital.nhs.uk/75/FF3AD0/LBOI_13.05_11_10_V1_D.xls'
 
