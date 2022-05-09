@@ -1,4 +1,4 @@
-# Data-processing-of-Cancer_data
+# Data-processing-for-Cancer_waiting_time_data
 NHS Cancer waiting time data processing using the Tidyverse
 
 ## License
