@@ -9,7 +9,7 @@ if (!("tidyverse" %in% packages$Package)) {
 library(rio)
 library(tidyverse)
 
-## Proportion of NHS cancer patients waiting more than one month between diagnosis and treatment
+## Proportion of NHS cancer patients waiting more than one month between diagnosis and treatment by year
 
 url <- 'https://files.digital.nhs.uk/75/FF3AD0/LBOI_13.05_11_10_V1_D.xls'
 
