@@ -9,7 +9,7 @@ if (!("tidyverse" %in% packages$Package)) {
 library(rio)
 library(tidyverse)
 
-## WHAT: The current NHS Cancer elective services stipulates that patients should not wait for more than 18 weeks 
+## WHAT: The current NHS Cancer elective service stipulates that patients should not wait for more than 18 weeks to see a specialist.  
 
 # HOW: Here, processed data will aid in analysing years 2015 & 2016 trends against the targets using the 
 # data of the NHS cancer patients waiting more than one 18 weeks between diagnosis and treatment 
