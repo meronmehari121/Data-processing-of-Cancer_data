@@ -1,12 +1,6 @@
-## Check required packages are installed
 
-if (!("rio" %in% packages$Package)) {
-  install.packages("rio")
-  
-  if (!("tidyverse" %in% packages$Package)) {
-    install.packages("tidyverse")
-    
-    library(rio) library(tidyverse)
+    library(rio)
+    library(tidyverse)
     
     ## WHAT: The current NHS Cancer elective service stipulates that patients should not wait for more than 18 weeks to see a specialist.  
     
