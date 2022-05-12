@@ -1,10 +1,8 @@
-
-pacman::p_load(rio, tidyverse)
-    
     ## WHAT: The current NHS Cancer elective service stipulates that patients should not wait for more than 18 weeks to see a specialist.  
     # HOW: Here, CCG level data will aid in analysing years 2015 & 2016 trends against the targets using the 
     # data of the NHS cancer patients waiting more than one 18 weeks between diagnosis and treatment 
     
+    pacman::p_load(rio, tidyverse)
     url <- 'https://files.digital.nhs.uk/75/FF3AD0/LBOI_13.05_11_10_V1_D.xls'
     
     table_15 <- rio::import(file = url, which = 2, skip = 4) 
