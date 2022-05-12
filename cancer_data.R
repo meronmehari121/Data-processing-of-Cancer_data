@@ -28,8 +28,11 @@ pacman::p_load(rio, tidyverse)
     View(full)
 
     # plotting proportion of patients across time 
-     ggplot(table_1) + aes(x = code, y = proportion_2015) + geom_col(fill = "#440154") +
+     ggplot(table_15) + aes(x = code, y = proportion_2015) + geom_col(fill = "#440154") +
      labs(x = "Proportion of waitlist", y = "CCGs", title = "CCG by Waiting times", subtitle = "Data for the year 2015") +
      theme_minimal()
-    
+
+     ggplot(table_16) + aes(x = code, y = proportion_2016) + geom_col(fill = "#440154") +
+     labs(x = "Proportion of waitlist", y = "CCGs", title = "CCG by Waiting times", subtitle = "Data for the year 2016") +
+     theme_minimal()
 
