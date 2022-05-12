@@ -11,7 +11,7 @@
       select(Code,Organisation,Proportion_2015 = Proportion) %>%
       rename_all(tolower) %>% 
       slice(-c(304:306)) 
-    head(table_15)
+    head(table_15,3)
     
     
     table_16 <- rio::import(file = url, which = 3, skip = 4)
@@ -19,7 +19,7 @@
     table_16 <- table_16 %>%
       select(Code,Organisation, proportion_2016="Percentage Waiting > 1 Month") %>% 
       rename_all(tolower) 
-    head(table_16)
+    head(table_16,3)
     
     # Joining 2015 & 2016 datasets 
     full <-  full_join(table_15,table_16, by = c("code", "organisation"))
