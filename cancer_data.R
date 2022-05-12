@@ -26,4 +26,10 @@ pacman::p_load(rio, tidyverse)
     # Joining 2015 & 2016 datasets 
     full <-  full_join(table_15,table_16, by = c("code", "organisation"))
     View(full)
+
+    # plotting proportion of patients across time 
+     ggplot(table_1) + aes(x = code, y = proportion_2015) + geom_col(fill = "#440154") +
+     labs(x = "Proportion of waitlist", y = "CCGs", title = "CCG by Waiting times", subtitle = "Data for the year 2015") +
+     theme_minimal()
     
+
